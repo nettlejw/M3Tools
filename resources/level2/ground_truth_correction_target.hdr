@@ -1,0 +1,18 @@
+ENVI
+description = {
+  Placeholder ground truth correction - all values set to 1 [Tue Feb 24
+  16:44:59 2009] [Tue Feb 24 16:45:00 2009]}
+samples = 85
+lines   = 1
+bands   = 1
+header offset = 0
+file type = ENVI Spectral Library
+data type = 4
+interleave = bsq
+sensor type = Unknown
+byte order = 0
+wavelength units = Unknown
+band names = {
+ M3 Groundtruth Correction}
+spectra names = {
+ M3 Placeholder Correction}

@@ -1,0 +1,13 @@
+This routine takes as input an M3 Level1B (Radiance) dataset and produces an M3 Level 2 (Reflectance) dataset. The user has the option to do all or part of the complete reflectance conversion as desired.
+ 
+Please note that this routine does not support the normal ENVI spatial or spectral subsetting of image cubes as part of the routine itself.  You must perform any spatial subsetting yourself prior to launching this routine,and the routine must be performed with the full set of M3 spectral channels - no spectral subsetting is supported.
+
+1) Do complete Level 2 conversion
+-This will be the option used in most cases.  Choose this option to do a complete conversion of L1B to L2 data, including all conversion factors.  
+
+2) Apply some or all correction factors
+-This allows the user to output image cubes that are the input radiance data modified by whichever correctionfactors the user chooses to apply.
+
+3) Get help on the Level 2 Creation process
+-Open a PDF file that gives details of the Level 2 conversion process.
+

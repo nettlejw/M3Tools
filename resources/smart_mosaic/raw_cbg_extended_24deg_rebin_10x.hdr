@@ -1,0 +1,18 @@
+ENVI
+description = {
+  File Resize Result, x resize factor: 1.000000, y resize factor: 1.000000.
+  [Thu Sep 17 20:56:48 2009]}
+samples = 9830
+lines   = 4608
+bands   = 1
+header offset = 0
+file type = ENVI Standard
+data type = 1
+interleave = bsq
+sensor type = Unknown
+byte order = 0
+map info = {Geographic Lat/Lon, 1.0000, 1.0000, -180.00000000, 90.00000000, 3.9062500000e-002, 3.9062500000e-002, Moon Sphere 1737.4, units=Degrees}
+wavelength units = Unknown
+pixel size = {3.90625000e-002, 3.90625000e-002, units=Meters}
+band names = {
+ Resize (Resize (Resize (Band 1:UVVIS_Clementine_Basemap_v2_ll.jp2):raw_cbg_extended_24deg):raw_cbg_extended_24deg_rebin_10x)}

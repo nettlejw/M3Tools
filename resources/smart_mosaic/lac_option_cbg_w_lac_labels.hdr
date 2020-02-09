@@ -1,0 +1,18 @@
+ENVI
+description = {
+  Display Output to Image [Mon Sep 21 12:41:34 2009]}
+samples = 3600
+lines   = 1800
+bands   = 1
+header offset = 0
+file type = ENVI Standard
+data type = 1
+interleave = bsq
+sensor type = Unknown
+byte order = 0
+map info = {Geographic Lat/Lon, 1.0000, 1.0000, -180.00000000, 90.00000000, 1.0000000000e-001, 1.0000000000e-001, WGS-84, units=Degrees}
+wavelength units = Unknown
+pixel size = {1.00000000e-001, 1.00000000e-001, units=Meters}
+default stretch = 0.000000 255.000000 linear
+band names = {
+ Gray Scale (Resize (Band Math (b1+b2*(b1eq0b)):[Memory6]):lac_option_cbg_temp)}

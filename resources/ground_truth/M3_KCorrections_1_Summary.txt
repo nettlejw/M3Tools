@@ -1,0 +1,22 @@
+M3 K Correction Factors 1
+Summary document by: Peter Isaacson
+12/04/09
+
+This version of the correction factors is derived (and intended) for global-mode, K radiance data WITHOUT a scattered light correction.  As such, it should be considered TEMPORARY.  Additionally, regardless of the correction used, extreme caution should be exercised in intepreting features on the order of the features in the correction factors (e.g., features with band depths of ~1% or less).  The various corrections may alter features at that level enough to be significant.  Stronger features should not be significantly affected.
+
+KRC1 is being implemented in the thermal removal process.  For absolute consistency with thermal removal, this is the correction that should be used.  It is derived from "featureless" spectra, based on a series of band depth thresholds.  The average "featureless" spectrum is calculated, a linear continuum removed, residual curvature removed, and the result inverted to produce the correction factors.  This correction does not correct or smooth the extreme short or long wavelengths (strives for accuracy, as we cannot be sure of accuracy at short wavelengths without addressing scattered light).
+
+The straight ground truth correction is derived from the H4 class defined for OP1b (see M3_TempGroundTurthCorrectionRecs_120209.ppt, distributed by email).  This averages a large number of highland pixels together, and forces the average spectrum to equal Apollo 16 laboratory soil with a linear extrapolation to 3 microns.  Caution should be used in applying this correction, as the ground truth correction rests on the assumption that your laboratory soil spectrum is truly representative of the average spectrum you are correcting.  No correction is applied above 2.2 microns (to avoid removing any thermal component), and no attempt is made to address color (slope) differences between M3 and laboratory spectra - the slope of the M3 spectra is adjusted to match the slope of the laboratory spectra.
+
+The EFFORT corrections are derived from OP1b data.  They are able to smooth the full wavelength range of M3 spectra, although "smooth" shound not be mistaken for "accurate" without a scattered light correction.  They are based on deviations from smooth model fits using a combination of Legendre polynomials and a reality boost spectrum (the Apollo 16 soil with the linear extrapolation to 3 microns.  It is MY interpretation that the EFFORT order-9 correction performs best at correcting the H4 average spectrum to Apollo 16 laboratory soil.  Individual users should make their own assessment and decide on the appropriate correction to use.
+*
+The M3DISCUSS list is sent to the following people:
+Joe Boardman, Bonnie Buratti, Leah Cheek, Roger Clark,
+Rob Green, Jim Head, Mike Hicks, Peter Isaacson,
+Rachel Klima, Georgiana Kramer, Sarah Lundeen, Erick Malaret,
+Tom McCord, Jack Mustard, Jeff Nettles, Noah Petro,
+Stefanie Tompkins, Carle Pieters, Cass Runyon, Matt Staid,
+Jessica Sunshine, Larry Taylor, Padma Varanasi,
+Stephanie McLaughlin, Jay Dickson, Jean-Philippe Combe,
+Kevin Thaisen, Sebastien Besse, Deepak Dhingra,
+Debra Hurwitz, Jennifer Whitten, Caleb Fassett

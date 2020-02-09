@@ -1,0 +1,18 @@
+ENVI
+description = {
+  File Resize Result, x resize factor: 1.000000, y resize factor: 1.000000.
+  [Mon Sep 21 12:06:13 2009]}
+samples = 3600
+lines   = 1800
+bands   = 1
+header offset = 0
+file type = ENVI Standard
+data type = 1
+interleave = bsq
+sensor type = Unknown
+byte order = 0
+map info = {Geographic Lat/Lon, 1.0000, 1.0000, -180.00000000, 90.00000000, 1.0000000000e-001, 1.0000000000e-001, WGS-84, units=Degrees}
+wavelength units = Unknown
+pixel size = {1.00000000e-001, 1.00000000e-001, units=Meters}
+band names = {
+ Resize (Resize (Resize (Resize (IDL Var (LM_INDEX): Band 1:[Memory1]):lm_index):lac_index):[Memory2])}
